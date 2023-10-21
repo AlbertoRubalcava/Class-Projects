@@ -1,22 +1,42 @@
 package org.example;
 
-    public class Node {
-        int id;
-        double data;
-        Node leftChild;
-        Node rightChild;
+class Node {
 
-        public Node(int id, double data) {
-            this.id = id;
-            this.data = data;
-        }
+    private int data;
+    private char c;
 
-        public int getKey() {
-            return id;
-        }
+    private Node left;
+    private Node right;
 
-        public void display() {
-            System.out.println("[" + id + ", " + data + "]");
-        }
+    public int getData() {
+        return data;
     }
 
+    public void setData(int data) {
+        this.data = data;
+    }
+
+    public char getC() {
+        return c;
+    }
+
+    public void setC(char c) {
+        this.c = c;
+    }
+
+    public Node getLeft() {
+        return left;
+    }
+
+    public void setLeft(Node left) {
+        this.left = left;
+    }
+
+    public Node getRight() {
+        return right;
+    }
+
+    public void setRight(Node right) {
+        this.right = right;
+    }
+}
